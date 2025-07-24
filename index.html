@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precision Chrono</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><i class="fas fa-stopwatch"></i> PRECISION CHRONO</h1>
+      <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </div>
+    </div>
+    
+    <div class="stopwatch-container">
+      <div class="time-display">
+        <div id="display">00:00:00.000</div>
+        <div class="time-units">
+          <span>HRS</span>
+          <span>MIN</span>
+          <span>SEC</span>
+          <span>MS</span>
+        </div>
+      </div>
+      
+      <div class="controls">
+        <button id="startPause" class="control-btn start">
+          <i class="fas fa-play"></i> Start
+        </button>
+        <button id="lap" class="control-btn lap" disabled>
+          <i class="fas fa-flag"></i> Lap
+        </button>
+        <button id="reset" class="control-btn reset">
+          <i class="fas fa-redo"></i> Reset
+        </button>
+      </div>
+      
+      <div class="laps-container">
+        <h3><i class="fas fa-history"></i> Lap History</h3>
+        <div class="laps-header">
+          <span>Lap</span>
+          <span>Time</span>
+          <span>Split</span>
+        </div>
+        <ul id="laps"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
